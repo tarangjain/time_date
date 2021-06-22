@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: currentdateandtime
+spec:
+  containers:
+  - image: tarangjain/time-date-go
+    name: currentdateandtime
+    ports:
+     - containerPort: 8080
