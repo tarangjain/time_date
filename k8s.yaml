@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Deployment
 metadata:
-  name: test-deploy
+  name: time
   labels:
-    name: test-deploy
+    name: time
 spec:
   replicas: 2
   selector: 
    matchLabels:
-     name: test
+     name: time
   template:
     metadata:
       name: time
