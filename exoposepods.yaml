@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: datetime
+spec:
+  selector:
+    matchLabels:
+      app: metrics
+      department: datetime
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: metrics
+        department: datetime
+    spec:
+      containers:
+      - name: hello
+        image: "hub.docker.com/tarangjain/time-date-go"
+        env:
+        - name: "PORT"
+          value: "50000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: datetime
+spec:
+  selector:
+    matchLabels:
+      app: datetime
+      department: date_time
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: date_time
+        department: datetime
+    spec:
+      containers:
+      - name: hello
+        image: "hub.docker.com/tarangjain/time-date-go"
+        env:
+        - name: "PORT"
+          value: "50001"
