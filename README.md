@@ -10,7 +10,7 @@ Step #2:
 Using the declarative approach to deploy the container with 2 replicas to k8s
 Step #3:
 Expose the app to the Internet, on WAN
-----------------------
+
 First, You need to install Goland in the -->VS Code (or) -->Local Machine <br />
 
 Here we will run the main.go file in localhost For that :
@@ -23,7 +23,7 @@ go run main.go
 
 The output can be seen on:
 http://localhost:8080
------------------------
+
 Now to run in Docker
 
 docker build . -t
@@ -32,7 +32,7 @@ docker run "image_name"
 ----------------
 Now to expose on the WAN 
 
-First you need access of the GKE
-    Create cluster on the GKE 
-and run the expose.yaml
-$kubectl apply -f expose.yaml 
+First you need access of the GKE <br />
+    Create cluster on the GKE <br />
+and run the expose.yaml <br />
+$kubectl apply -f expose.yaml <br />
