@@ -2,7 +2,7 @@
 
 Date and Time project on Golang <br />
 In this project, an application is created on the goland with html and k8s.yaml file.<br />
-----------------------
+
 Flow for the project was 
 Step 1:
 Create a GoLang Program which reflects the current date & time and host it on GitHub -> Push that code to DockerHub In other words: Use docker to create a web application with date & time as the only content
@@ -29,7 +29,7 @@ Now to run in Docker
 docker build . -t
 docker images --> their you can see the image
 docker run "image_name"
-----------------
+
 Now to expose on the WAN 
 
 First you need access of the GKE <br />
